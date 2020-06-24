@@ -1,0 +1,11 @@
+[master]
+kube0.lab.nicholasburr.com ansible_host=192.168.2.100
+
+[node]
+kube1.lab.nicholasburr.com ansible_host=192.168.2.101
+kube2.lab.nicholasburr.com ansible_host=192.168.2.102
+
+
+[k3s_cluster:children]
+master
+node
